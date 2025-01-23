@@ -1,0 +1,102 @@
+#act3 Pavel y Victoria
+import random
+
+num_samples = 10
+# Número de puntos aleatorios que vamos a generar
+inside_circle = 0  # Contador de los puntos dentro del círculo
+
+# Generar puntos aleatorios y contar cuántos caen dentro del círculo
+for i in range(num_samples):
+    x = random.uniform(-1, 1)  # Coordenada x aleatoria entre -1 y 1
+    y = random.uniform(-1, 1)  # Coordenada y aleatoria entre -1 y 1
+    if x**2 + y**2 <= 1:  # Verificamos si el punto está dentro del círculo de radio 1
+        inside_circle += 1  # Aumentamos el contador si el punto está dentro del círculo
+
+# Estimación de Pi
+pi_estimate = 4 * inside_circle / num_samples  # La fórmula para estimar Pi
+print(f"Estimated Pi: {pi_estimate}")
+
+import random
+
+num_samples = 100
+# Número de puntos aleatorios que vamos a generar
+inside_circle = 0  # Contador de los puntos dentro del círculo
+
+# Generar puntos aleatorios y contar cuántos caen dentro del círculo
+for i in range(num_samples):
+    x = random.uniform(-1, 1)  # Coordenada x aleatoria entre -1 y 1
+    y = random.uniform(-1, 1)  # Coordenada y aleatoria entre -1 y 1
+    if x**2 + y**2 <= 1:  # Verificamos si el punto está dentro del círculo de radio 1
+        inside_circle += 1  # Aumentamos el contador si el punto está dentro del círculo
+
+# Estimación de Pi
+pi_estimate = 4 * inside_circle / num_samples  # La fórmula para estimar Pi
+print(f"Estimated Pi: {pi_estimate}")
+
+import random
+
+num_samples = 1000
+# Número de puntos aleatorios que vamos a generar
+inside_circle = 0  # Contador de los puntos dentro del círculo
+
+# Generar puntos aleatorios y contar cuántos caen dentro del círculo
+for i in range(num_samples):
+    x = random.uniform(-1, 1)  # Coordenada x aleatoria entre -1 y 1
+    y = random.uniform(-1, 1)  # Coordenada y aleatoria entre -1 y 1
+    if x**2 + y**2 <= 1:  # Verificamos si el punto está dentro del círculo de radio 1
+        inside_circle += 1  # Aumentamos el contador si el punto está dentro del círculo
+
+# Estimación de Pi
+pi_estimate = 4 * inside_circle / num_samples  # La fórmula para estimar Pi
+print(f"Estimated Pi: {pi_estimate}")
+
+import random
+
+num_samples = 10000
+# Número de puntos aleatorios que vamos a generar
+inside_circle = 0  # Contador de los puntos dentro del círculo
+
+# Generar puntos aleatorios y contar cuántos caen dentro del círculo
+for i in range(num_samples):
+    x = random.uniform(-1, 1)  # Coordenada x aleatoria entre -1 y 1
+    y = random.uniform(-1, 1)  # Coordenada y aleatoria entre -1 y 1
+    if x**2 + y**2 <= 1:  # Verificamos si el punto está dentro del círculo de radio 1
+        inside_circle += 1  # Aumentamos el contador si el punto está dentro del círculo
+
+# Estimación de Pi
+pi_estimate = 4 * inside_circle / num_samples  # La fórmula para estimar Pi
+print(f"Estimated Pi: {pi_estimate}")
+
+import random
+
+num_samples = 100000
+# Número de puntos aleatorios que vamos a generar
+inside_circle = 0  # Contador de los puntos dentro del círculo
+
+# Generar puntos aleatorios y contar cuántos caen dentro del círculo
+for i in range(num_samples):
+    x = random.uniform(-1, 1)  # Coordenada x aleatoria entre -1 y 1
+    y = random.uniform(-1, 1)  # Coordenada y aleatoria entre -1 y 1
+    if x**2 + y**2 <= 1:  # Verificamos si el punto está dentro del círculo de radio 1
+        inside_circle += 1  # Aumentamos el contador si el punto está dentro del círculo
+
+# Estimación de Pi
+pi_estimate = 4 * inside_circle / num_samples  # La fórmula para estimar Pi
+print(f"Estimated Pi: {pi_estimate}")
+
+import random
+
+num_samples = 1000000
+# Número de puntos aleatorios que vamos a generar
+inside_circle = 0  # Contador de los puntos dentro del círculo
+
+# Generar puntos aleatorios y contar cuántos caen dentro del círculo
+for i in range(num_samples):
+    x = random.uniform(-1, 1)  # Coordenada x aleatoria entre -1 y 1
+    y = random.uniform(-1, 1)  # Coordenada y aleatoria entre -1 y 1
+    if x**2 + y**2 <= 1:  # Verificamos si el punto está dentro del círculo de radio 1
+        inside_circle += 1  # Aumentamos el contador si el punto está dentro del círculo
+
+# Estimación de Pi
+pi_estimate = 4 * inside_circle / num_samples  # La fórmula para estimar Pi
+print(f"Estimated Pi: {pi_estimate}")
