@@ -1,0 +1,50 @@
+#simulacion particulas Pavel y Victoria
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Función para generar partículas ordenadas simétricamente
+def particulas_ordenadas(n, largo=10):
+    # Distribuir las partículas en una cuadrícula simétrica
+    x = np.linspace(0, largo, n)
+    y = np.linspace(0, largo, n)
+    X, Y = np.meshgrid(x, y)
+    X = X.flatten()
+    Y = Y.flatten()
+    return X, Y
+
+# Función para generar partículas en posiciones aleatorias
+def particulas_random(n, largo=10):
+    # Generar posiciones aleatorias sin sobreposición
+    X = np.random.rand(n) * largo
+    Y = np.random.rand(n) * largo
+    return X, Y
+
+# Número de partículas
+n_particulas = 25
+
+# Generar las posiciones de las partículas
+X_ordenadas, Y_ordenadas = particulas_ordenadas(n_particulas)
+X_random, Y_random = particulas_random(n_particulas)
+
+# Crear las gráficas
+fig, ax = plt.subplots(1, 2, figsize=(12, 6))
+
+# Gráfica de partículas ordenadas
+ax[0].scatter(X_ordenadas, Y_ordenadas, color='blue', marker='o')
+ax[0].set_title("Partículas Ordenadas Simétricamente")
+ax[0].set_xlim(0, 10)
+ax[0].set_ylim(0, 10)
+ax[0].set_xlabel("X")
+ax[0].set_ylabel("Y")
+
+# Gráfica de partículas en posiciones aleatorias
+ax[1].scatter(X_random, Y_random, color='red', marker='o')
+ax[1].set_title("Partículas en Posiciones Aleatorias")
+ax[1].set_xlim(0, 10)
+ax[1].set_ylim(0, 10)
+ax[1].set_xlabel("X")
+ax[1].set_ylabel("Y")
+
+# Mostrar las gráficas
+plt.tight_layout()
+plt.show()
